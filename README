@@ -1,0 +1,29 @@
+= Disqus
+
+Provides tags to integrate Disqus comments into your site
+
+== Installation
+
+  script/extension install disqus
+
+== Configuration
+
+You can set the following configuration variables which will be used unless the tag overrides them.
+
+1. disqus.shortname
+
+Sets your Disqus forum shortname provided to you on your Disqus account page. See http://docs.disqus.com/developers/universal/
+
+1. disqus.developer_mode?
+
+Sets the disqus configuration parameter to indicate developer mode in the Disqus code block. See http://docs.disqus.com/ for more information about developer mode.
+
+  var disqus_developer = '1';
+
+1. disqus.auto_title?
+
+By default, the disqus_title parameter is not set. Set this to true to use the page's title as the default value for this parameter.
+	
+1. disqus.hide_powered_by?
+
+By default, the "powered by Disqus" link is shown at the bottom of the disqus comments block. Set this to true to hide it.
